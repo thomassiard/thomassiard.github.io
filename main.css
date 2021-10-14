@@ -1,0 +1,40 @@
+body {
+  background-image: url(img/bolje.jpg);
+  background: cover;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid lightblue;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: darkblue;
+  color: white;
+  font: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+}
+
+.container {
+  border-radius: 10px;
+  background: cover;
+  padding: 20px;
+}
