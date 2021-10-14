@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thomas Siard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap" rel="stylesheet">
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css" />
+    </style>
   </head>
-  <body>
-    <h1>Thomas Siard</h1>
+  <body class="text-center">
+    <div class="bg-white w-8/12 mx-auto mt-10 bg-opacity-50" >
+    <img src="thomas.jpeg" class="rounded-full w-2/12 mx-auto pt-10"/>
+    <h1 class="text-3xl"><b>Thomas Siard</b></h1>
+    <a href="https://www.instagram.com/thomas_siard/?hl=en" class="fa fa-instagram" target="_blank"></a>
+    <a href="https://www.youtube.com/channel/UChKQYfKENzhabTCa3h-sqUw" class="fa fa-youtube" target="_blank"></a>
+    <a href="https://thomassiard.wordpress.com" class="fa fa-wordpress" target="_blank"></a>
+    <a href="https://github.com/thomassiard" class="fa fa-github" target="_blank"></a>
+    <div class="flex gap-10">
+      <div class="w-6/12">
+        <p class="text-2xl pt-5 pb-20" ><b>O meni</b></p>
+        <p class="font-semibold">Dobar dan. Moje ime je Thomas Siard i imam 20 godina. Student sam na Fakultetu Informatike u Puli. Pokušavam pomalo naučiti HTML, CSS i JavaScript. 
+          Do sada sam se bavio C++ i Python-om. Volim pratiti sportove kao što su UFC i NBA.
+          U slobodno vrijeme igram igrice sa prijateljima i volim izlaziti vani u prirodu. Cilj mi je početi sam raditi sa strane neke projekte kako bih poboljšao i proširio svoje znanje.
+           </p>
+      </div>
+      <div class="w-6/12">
+      <p class="text-2xl pt-5 pb-20"><b>Kontakt</b></p>
+        <div class="font-semibold pb-10">
+          Moj email: tsiard@student.unipu.hr
+        </div>
+      <div class="container">
+        <form action="action_page.php">
+      
+          <label for="name"><b>Name</b></label>
+          <input type="text" id="name" name="name" placeholder="Ime i prezime...">
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" id="email" name="email" placeholder="asd123@gmail.com...">
+      
+          <label for="message"><b>Message</b></label>
+          <textarea id="message" name="message" placeholder="Napišite nešto..." style="height:150px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      </div>
+    </div>
+    
+    </div>
   </body>
 </html>

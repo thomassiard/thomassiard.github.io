@@ -1,5 +1,5 @@
-# Repozitorij moje osobne web stranice 
+# Repozitorij moje osobne web stranice
 
-asdasda
+Moja osobna web stranica!
 
 Adresa web stranice: https://thomassiard.github.io
