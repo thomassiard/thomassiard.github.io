@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_6G7tOdsV5ijCO6FyVwESL');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_9ixhx72', 'template_ozoukwj', this)
+                    .then(function() {
+                        alert('SUCCESS!');
+                    }, function(error) {
+                        alert('FAILED...', error);
+                    });
+            });
+        }
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,10 +58,10 @@
           Moj email: tsiard@student.unipu.hr
         </div>
       <div class="container">
-        <form action="action_page.php">
+        <form id="contact-form">
       
           <label for="name"><b>Name</b></label>
-          <input type="text" id="name" name="name" placeholder="Ime i prezime...">
+          <input type="text" id="from_name" name="from_name" placeholder="Ime i prezime...">
 
           <label for="email"><b>Email</b></label>
           <input type="text" id="email" name="email" placeholder="asd123@gmail.com...">
@@ -49,7 +69,7 @@
           <label for="message"><b>Message</b></label>
           <textarea id="message" name="message" placeholder="Napišite nešto..." style="height:150px"></textarea>
       
-          <input type="submit" value="Submit">
+          <input type="submit" value="submit">
         </form>
       </div>
       </div>
